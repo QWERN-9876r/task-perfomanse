@@ -1,6 +1,9 @@
 module.exports = {
-    entry: './src/main.js',
+    entry: {
+        main: './src/main.js',
+        worker: './src/worker.js'
+    },
     output: {
-        filename: 'bandle.js'
+        chunkFilename: '[id].js',
     }
 }
