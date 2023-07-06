@@ -1,1 +1,1 @@
-onmessage(({data})=>{const OneElement=data.items.map((item,index)=>_jsx(Event,{...item,onSize:data.onSize},index)),LiArray=new Array(64);for(let i=0;i<64;i++)liArray[i]=_jsx(OneElement,{});postMessage(_jsx("ul",{className:"section__panel-list",children:_jsx(LiArray,{})}))})
+onmessage((({data:e})=>{const s=new Array(64).fill(!1);postMessage(_jsx("ul",{className:"section__panel-list",children:s.map((()=>e.items.map(((s,a)=>_jsx(Event,{...s,onSize:e.onSize},a)))))}))}));
